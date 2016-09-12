@@ -66,8 +66,8 @@ print "CC_NO= %s" %ccno
 
 #-------------------Human readability code-----------------
 
-s1=dist[0:2]+ "_" +city[0:2]+ "_" +state[0:2]
-print "Human readability code: %s" %s1.upper()
+s1=dist[0:3]+ "_" +city[0:3]+ "_" +state[0:3]
+print "Human readability code: %s" %s1.upper() +"_" +ccno
 
 
 

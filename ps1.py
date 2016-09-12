@@ -17,3 +17,15 @@ for i in inp2:
 out= sorted(default_d.iteritems(), key=lambda x:-x[1])[:3]
 for field in out :
 	print "{0}: {1}".format(*field)
+
+
+##permutation program
+
+from itertools import permutations
+for i in inp2:
+	z=len(i)
+	if(z<=1):
+		print i
+	else:
+		iteration = [''.join(pic) for pic in permutations(i)]
+		print iteration[1]
